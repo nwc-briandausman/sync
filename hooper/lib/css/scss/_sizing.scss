@@ -1,0 +1,41 @@
+//Button Sizing Helpers
+.btn-xs, .btn-xs:hover{
+  @include sizing("btn", $buttonFontStandardSize - 0.25em);
+}
+
+.btn-sm, .btn-sm:hover{
+  @include sizing("btn", $buttonFontStandardSize - 0.1em );
+}
+
+.btn-md, .btn-md:hover{
+  @include sizing("btn", $buttonFontStandardSize);
+}
+
+.btn-lg, .btn-lg:hover{
+  @include sizing("btn", $buttonFontStandardSize + 0.25em );
+}
+
+.btn-xl, .btn-xl:hover{
+  @include sizing("btn", $buttonFontStandardSize + 0.75em );
+}
+
+//Font Sizing Helpers
+.font-xs{
+  @include sizing("font", $fontStandardSize - 6px);
+}
+
+.font-sm{
+  @include sizing("font", $fontStandardSize - 4px );
+}
+
+.font-md{
+  @include sizing("font", $fontStandardSize);
+}
+
+.font-lg{
+  @include sizing("font", $fontStandardSize + 4px );
+}
+
+.font-xl{
+  @include sizing("font", $fontStandardSize + 6px );
+}

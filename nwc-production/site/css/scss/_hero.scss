@@ -1,0 +1,27 @@
+/*********************
+Hero Styles
+*********************/
+#hero{
+    background: url(../images/hero-bg.jpg) no-repeat center center fixed;
+    color: $white;
+    height: 100%;
+    
+    @include text-shadow( 0px 2px 4px rgba(0,0,0, 0.4) );
+    @include background-size(cover);
+    
+    
+        #home{
+            padding-bottom: 55px;
+        }
+
+        h1{
+            margin-top: 60px;
+            color: $white;
+        }
+    
+        hr{
+            width: 50%;
+            border-color: $nwc-purple-light;
+            @include text-shadow( 0px 2px 4px rgba(0,0,0, 0.4) );
+        }
+}

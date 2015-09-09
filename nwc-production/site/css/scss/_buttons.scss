@@ -1,0 +1,56 @@
+.btn{
+    font-size: 1.5em;    
+    font-weight: 100;
+    font-family: 'Raleway', $open-sans;
+    padding: 10px 80px;
+    @include transition-property(all);
+    @include transition-duration(.2s);
+    @include transition-timing-function(ease-in);
+    
+    @media #{$mq-phone}{
+        font-size: 1em;   
+        padding: 10px 50px;
+    }
+
+    @media #{$mq-tablet-h}{
+        font-size: 1.3em;    
+    }
+}
+
+.btn-default{
+    color: $white;
+    text-shadow: none;
+    border: 1px solid $white;
+    background: rgba(255,255,255,0.1); 
+    
+    &:hover{
+        background: $nwc-purple;    
+        color: $white;
+        border-color: $nwc-purple;
+    }
+}
+
+.btn-nwc{
+    color: $white;
+    text-shadow: none;
+    border: 1px solid darken( $nwc-purple, 10% );
+    background: $nwc-purple;
+    
+    &:hover{
+        color: $white;
+        background: 1px solid darken( $nwc-purple, 10% );
+    }
+}
+
+.btn-alt{
+    font-family: $open-sans;
+    font-size: 1em;
+    background: $nwc-purple;    
+    color: $white;
+    border-color: $nwc-purple;
+    
+    &:hover{
+        color: $nwc-purple;
+        background: none;
+    }
+}

@@ -1,0 +1,44 @@
+/*********************
+Footer
+*********************/
+#footer{
+    margin-top: 60px;
+    font-size: 0.75em;
+    
+    i{
+        font-size: 2em;
+        
+        @media #{$mq-phone}{
+            font-size: 1.5em;
+        }
+    }
+
+    a{
+        color: $nwc-dark;
+        padding: 15px;
+        @include transition-property(all);
+        @include transition-duration(.2s);
+        @include transition-timing-function(ease-in);  
+    
+        &:hover{
+            color: $nwc-purple-light;
+            text-decoration: none;
+        }
+
+        &.link-alt{
+            color: $nwc-purple;
+    
+            &:hover{
+                color: $nwc-purple-light;
+            }
+        }
+
+        @media #{$mq-phone}{
+            padding: 10px;
+        }
+    }
+
+    small{
+        color: darken( $nwc-light, 20% );
+    }
+}

@@ -1,0 +1,27 @@
+/******************************************************************
+Site Name: Nerds With Charisma
+Author: Brian Dausman - brian@nerdswithcharisma.com
+
+Stylesheet: Main Stylesheet
+
+Here's where the magic happens. Here, you'll see we are calling in
+the separate media queries. The base mobile goes outside any query
+and is called at the beginning, after that we call the rest
+of the styles inside media queries.
+******************************************************************/
+
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,400italic|Open+Sans:400,300,700,800|Raleway:400,100);
+
+@import "compass";
+@import "mixins";
+
+@import "bootstrap";        /* twitter bootstrap  */
+@import "base";             /* html and basic styles */
+@import "typography";       /* headings, fonts, etc */
+@import "buttons";          /* buttons, dun */
+
+@import "nav";              /* nav and menus */
+@import "hero";             /* homepage hero area */
+@import "footer";           /* footer */
+
+@import "blog";             /* blog styles */

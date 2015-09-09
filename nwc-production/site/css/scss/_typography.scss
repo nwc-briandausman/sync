@@ -1,0 +1,87 @@
+/*********************
+Typography
+*********************/
+h1,h2,h3,h4,h5,h6{
+    font-family: $open-sans;
+    @include transition-property(all);
+    @include transition-duration(.2s);
+    @include transition-timing-function(ease-in);
+}
+
+h1, .h1{
+    font-size: 21em;
+    color: $nwc-dark;
+    font-weight: 900; 
+    
+    @media #{$mq-phone}{
+        font-size: 6em;    
+    }
+
+    @media #{$mq-tablet-h}{
+        font-size: 10em;    
+    }
+
+    @media #{$mq-tablet-v}{
+        font-size: 15em;    
+    }
+}
+
+h2, .h2{
+    font-size: 3em;
+    font-weight: 100;
+    text-transform: capitalize;
+    font-family: 'Raleway', $open-sans;
+    margin: 30px 0;
+    
+    @media #{$mq-phone}{
+        font-size: 1.4em;    
+        line-height: 1.4em;
+    }
+
+    @media #{$mq-tablet-h}{
+        font-size: 2em;    
+        line-height: 1.4em;
+    }
+
+    @media #{$mq-tablet-v}{
+        font-size: 2.5em;    
+    }
+}
+h3, .h3{
+    font-size: 3.7em;
+    font-weight: 900;
+    
+    @media #{$mq-phone}{
+        font-size: 1.8em;    
+        line-height: 1.8em;
+    }
+}
+h4, .h4{
+    font-size: 1.2em;
+    font-weight: 300;
+    color: $grey;
+    
+    @media #{$mq-phone}{
+        font-size: 0.875em;    
+        line-height: 1.5em;
+    }
+}
+h5, .h5{
+    font-style: italic;
+    color: $nwc-dark;
+    font-size: 2em;
+    font-family: serif;
+    margin-bottom: 45px;
+    
+    @media #{$mq-phone}{
+        font-size: 1.4em;    
+        line-height: 1.4em;
+        margin-bottom: 10px;
+    }
+}
+
+h6, .h6{
+    font-size: 1.7em;
+    font-weight: 800;
+    line-height: 65px;
+}

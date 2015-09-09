@@ -1,0 +1,138 @@
+/* header navigation */
+header{
+    opacity: 0.4;
+    @include transition-property(all);
+    @include transition-duration(.2s);
+    @include transition-timing-function(ease-in);
+    
+    &:hover{
+        opacity: 1;    
+    }
+
+    h1{
+        margin: 0;
+        text-indent: -9999px;
+        @extend %top-left;
+        width: 0;
+        height: 0;
+    }
+
+    #logo a{
+        color: $white;
+        font-size: 2.3em;
+        @extend %top-left;
+    
+        div{
+            float: left;
+            margin-right: 10px;
+            @include transition-property(all);
+            @include transition-duration(.2s);
+            @include transition-timing-function(ease-in);
+        
+            &:hover{
+                color: $nwc-purple;
+            }
+        }
+    }
+
+    #nav-toggle{
+        @extend %top-right;
+        color: $white;
+        font-size: 1.7em;
+        cursor: pointer;
+        @include text-shadow( 0px 1px 1px rgba(0,0,0, 0.4) );
+    }
+}
+
+
+/* back to top sticky */
+#top{
+    display: none;
+    @extend %fixed-bottom-left; 
+    cursor: pointer;
+    background: $nwc-dark;
+    color: $white;
+    padding: 10px;
+    @include border-radius(100px);
+    @include transition-property(all);
+    @include transition-duration(.2s);
+    @include transition-timing-function(ease-in);
+    
+    &:hover{
+        background: $nwc-purple;    
+    }
+}
+
+/* push nav */
+#pushNav{
+    position: absolute;
+    top: 0;    
+    right: 0;
+    width: 80%;
+    height: 100%;
+    background-color: $off-white;
+    padding: 50px;
+    overflow-y: scroll;
+    
+    border-left: 4px solid #e3e0e1;
+    @include transition-property(all);
+    @include transition-duration(.5s);
+    @include transition-timing-function(ease-out);
+    
+    
+    @media #{$mq-phone}{
+        padding: 5px 15px;
+    }
+
+
+    &.navigation--open{
+
+    }
+
+    p{
+        color: lighten( $nwc-dark, 20% );
+        line-height: 2em;
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    
+        strong{
+            color: $nwc-dark;
+        }
+
+        @media #{$mq-phone}{
+            font-size: 1em;    
+            line-height: 1.7em;
+        }
+    }
+}
+
+#pushContent{
+    position: relative;
+    z-index: 10;
+    @include transition-property(all);
+    @include transition-duration(.5s);
+    @include transition-timing-function(ease-out);
+    
+    &.content--open{
+        -webkit-transform: translate3d(-80%, 0, 0);
+        -moz-transform: translate3d(-80%, 0, 0);
+        -ms-transform: translate3d(-80%, 0, 0);
+        -o-transform: translate3d(-80%, 0, 0);
+        transform: translate3d(-80%, 0, 0);  
+    }
+}
+
+/* services */
+#services{
+    line-height: 2em;
+    color: $grey;
+
+    strong{
+        color: $nwc-dark;    
+    }
+
+    @media #{$mq-phone}{
+        font-size: 1.4em;    
+        line-height: 1.4em;
+    }
+}

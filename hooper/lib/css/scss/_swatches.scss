@@ -1,0 +1,88 @@
+//backgrounds
+.bg-standardGray{
+  @include swatch($standardGray);
+}
+
+.bg-standardText{
+  @include swatch($standardText);
+}
+
+.bg-dullGray{
+  @include swatch($dullGray);
+}
+
+.bg-lightGray{
+  @include swatch($lightGray);
+}
+    
+.bg-boundsGray{
+  @include swatch($boundsGray);
+}
+
+.bg-primary{
+  @include swatch($primary);
+}
+
+.bg-primaryLight{
+  @include swatch($primaryLight);
+}
+
+.bg-cta{
+  @include swatch($cta);
+}
+
+.bg-success{
+  @include swatch($success);
+}
+
+.bg-action{
+  @include swatch($action);
+}
+
+.bg-danger{
+  @include swatch($danger);
+}
+//fonts
+.standardGray{
+  @include fontSwatch($standardGray);
+}
+
+.standardText{
+  @include fontSwatch($standardText);
+}
+
+.dullGray{
+  @include fontSwatch($dullGray);
+}
+
+.lightGray{
+  @include fontSwatch($lightGray);
+}
+
+.boundsGray{
+  @include fontSwatch($boundsGray);
+}
+
+.primary{
+  @include fontSwatch($primary);
+}
+
+.primaryLight{
+  @include fontSwatch($primaryLight);
+}
+
+.cta{
+  @include fontSwatch($cta);
+}
+
+.success{
+  @include fontSwatch($success);
+}
+
+.action{
+  @include fontSwatch($action);
+}
+
+.danger{
+  @include fontSwatch($danger);
+}

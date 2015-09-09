@@ -1,0 +1,77 @@
+/*********************
+Portfolio
+*********************/
+#portfolio{
+    margin-bottom: $uniform-margin;
+    
+    .port-item span{
+        background: $nwc-purple;
+        display: block;
+        margin-top: -50px;
+        
+        img{
+            @include transition-property(all);
+            @include transition-duration(.2s);
+            @include transition-timing-function(ease-in);    
+        }
+        
+        &:hover{
+            img{
+                opacity: 0.4;
+            }
+        }
+    }
+}
+
+#portfolioItem{
+    display: none;
+    background: url(../images/loading.gif) center 150px no-repeat;
+    min-height: 300px;
+    
+    h1{
+        color: $nwc-dark;
+        margin-top: 0em;
+        padding-top: 0em;
+        padding-bottom: 0em;
+        margin-bottom: 0.24em;
+        font-size: 2.5em;
+        line-height: 1.08em; 
+    }
+
+    h2{
+        font-size: 1.5em;
+        font-style: italic;
+        font-family: 'PT Serif', serif;
+        -webkit-margin-before: 0.83em;
+        -webkit-margin-after: 0.83em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        font-weight: normal;
+        color: $nwc-blue-grey;
+    }
+
+    h3{
+        color: $nwc-medium;
+        font-weight: 300;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    p{
+        color: $grey;
+        -webkit-font-smoothing: antialiased;
+        line-height: 1.8em;
+        font-size: 1.1em;
+    }
+}
+
+#skills{
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    
+    li{
+        list-style: none;
+        line-height: 2em;
+    }
+}
