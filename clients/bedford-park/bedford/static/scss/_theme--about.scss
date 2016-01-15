@@ -1,0 +1,36 @@
+#section--about{
+    position: relative;
+    
+    .about-appliances{ position: relative; }
+    
+    #aboutSidebar{
+        height: 170px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-shadow: 0px 1px 0 $primaryDark; 
+    }
+    
+    @media #{$iphone}{
+        #aboutSidebar{
+            position: relative;
+            bottom: 0;
+            height: auto;
+        }
+    }
+
+    @media #{$tablet-vert}{
+        #aboutSidebar{
+            position: relative;
+            height: auto;
+        }
+    }
+
+@media #{$tablet-horiz}{
+        #aboutSidebar{
+            position: relative;
+            height: auto;
+        }
+    }
+}

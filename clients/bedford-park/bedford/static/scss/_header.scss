@@ -1,0 +1,16 @@
+header {
+    padding: 5px 0px;
+    background-color: $headerGray;
+    @include box-shadow( inset 0 0 4px rgba( 0,0,0,0.1 ));
+
+    #logo {
+    max-width: 100%;
+    }
+}
+
+@media #{$iphone}{
+        header{
+            font-size: 13px;
+            line-height: 18px;
+        }
+    }

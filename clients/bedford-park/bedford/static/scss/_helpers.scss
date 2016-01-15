@@ -1,0 +1,144 @@
+.clear{ clear: both; }
+
+//links
+.cursor--pointer{ cursor: pointer; }
+//box model
+.margin--none{ margin: none; }
+.margin--auto{ margin: auto; }
+.padding--none{ padding: none; }
+
+//positioning on mobile
+@media #{$iphone}{
+    .text-center-xs{ text-align: center; }
+}
+//images
+img.pull-right{ margin-left: 15px; margin-bottom: 15px; }
+img.pull-left{ margin-right: 15px; margin-bottom: 15px; }
+
+//transitions
+a{ 
+    @include transitionAll();
+}
+
+//line height
+.lh-1{
+  line-height: 1em;
+}
+
+.lh-standard{
+    line-height: 1.6em;
+}
+
+.lh-3{
+  line-height: 3em;
+}
+
+.lh-4{
+  line-height: 4em;
+}
+
+.lh-5{
+  line-height: 5em;
+}
+
+.lh-7{
+  line-height: 7em;
+}
+
+.lh-9{
+  line-height: 9em;
+}
+
+//z index
+.z1{ z-index: 1; }
+.z2{ z-index: 2; }
+.z10{ z-index: 10; }
+.z100{ z-index: 100; }
+.z1000{ z-index: 1000; }
+.z7500{ z-index: 7500; }
+.z9998{ z-index: 9998; }
+.z9999{ z-index: 9999; }
+
+.padding-vert-xxs{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.padding-vert-xs{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.padding-vert-sm{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.padding-vert-md{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.padding-vert-lg{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.padding-vert-xl{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.padding-horiz-xxs{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.padding-horiz-xs{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.padding-horiz-sm{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.padding-horiz-md{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.padding-horiz-lg{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.padding-horiz-xl{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.padding-xxs{
+    padding: 2px;
+}
+
+.padding-xs{
+    padding: 5px;
+}
+
+.padding-sm{
+    padding: 10px;
+}
+
+.padding-md{
+    padding: 15px;
+}
+
+.padding-lg{
+    padding: 20px;
+}
+
+.padding-xl{
+    padding: 25px;
+}
