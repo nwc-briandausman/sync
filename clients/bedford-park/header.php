@@ -22,7 +22,7 @@
 		<link rel="apple-touch-icon" sizes="114x114" href="s/images/icons/apple-touch-icon-114x114.png">
         
         <!-- css -->
-        <link href="<?php bloginfo('template_directory'); ?>/static/css/style.min.css" rel="stylesheet">
+        <link href="<?php bloginfo('template_directory'); ?>/static/css/site.min.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
         
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -31,32 +31,38 @@
         <![endif]-->
 	</head>
 
-	<body id="blog" <?php body_class(); ?>>        
+	<body id="blog" <?php body_class(); ?>>   
+        <?php require_once('header--upper.php'); ?>
+        
 		<!-- Primary Page Layout
         ================================================== -->   
         <section>
-            <header id="header">
-                <a href="<?php bloginfo('url'); ?>">
-                    <?php bloginfo( 'name' ); ?>
-                </a>  
+            <header class="padding-vert-xs bordered--xs lh-5">
+                <div class="container">
+                    <div class="col-xs-12 col-md-3">
+                        <a href="<?php bloginfo('url'); ?>">
+                            <img src="<?php echo get_template_directory_uri(); ?>/static/images/logo.jpg" alt="<?php bloginfo('url'); ?>" class="img-responsive" />
+                        </a>  
+                    </div>
+                    <div class="col-md-9 text-right">
+                        <nav id="mainNav">
+                            <?php
+                            /* 
+                             * Nav with nothing wrapped around it
+                             * Used to remove unwanted li/uls
+                            */ 
+                            $args = array(
+                                'menu'            => 'mainMenu',
+                                'menu_class'      => 'list list-unstyled',
+                                'container'       => false,
+                                'echo'            => false,
+                                'items_wrap'      => '%3$s',
+                                'depth'           => 0,
+                            );
+                            echo strip_tags(wp_nav_menu( $args ), '<a>' ); 
+
+                            ?>
+                        </nav>
+                    </div>
+                </div>
             </header> 
-            
-            <nav id="mainNav">
-                <?php wp_nav_menu(); ?> 
-                
-                <?php
-                /* 
-                 * Nav with nothing wrapped around it
-                 * Used to remove unwanted li/uls
-                */ 
-                $footerTopNav = array(
-                    'menu'            => 'footerTop',
-                    'container'       => false,
-                    'echo'            => false,
-                    'items_wrap'      => '%3$s',
-                    'depth'           => 0,
-                );
-                echo strip_tags(wp_nav_menu( $footerTopNav ), '<a>' ); 
-                
-                ?>
-            </nav>
