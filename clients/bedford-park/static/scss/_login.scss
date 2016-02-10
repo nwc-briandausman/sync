@@ -1,0 +1,14 @@
+#memberBenefits {
+    padding: 15px;
+    background: lighten( $cta, 46% ); 
+    @include border-radius(5px);
+    
+        h3 {
+            padding: 8px;
+        }
+    
+        i {
+            padding-right: 8px;
+        }
+}
+

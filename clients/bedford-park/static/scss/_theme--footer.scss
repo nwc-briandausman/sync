@@ -1,0 +1,29 @@
+#footer--divider{
+    position: relative;
+    background-color: rgba(9,45,90,0.7);
+    
+    #logo{
+        position: absolute;
+        max-width: 100%;
+        top: 10px;
+        left: 0;
+        width: 100%;
+            
+        img{
+            width: 175px;
+            margin: auto;
+        }
+    }
+}
+
+#section--footer{
+    a{
+        &:hover{
+            color: $cta;    
+        }
+    }
+}
+
+a.fb:hover{ color: #3a5795 !important; }
+a.gp:hover{ color: #df4a32 !important; }
+a.tw:hover{ color: #50aaf0 !important; }

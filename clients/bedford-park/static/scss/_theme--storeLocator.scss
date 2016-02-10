@@ -1,0 +1,54 @@
+#storeLocator{
+    #storeLocatorLocation{
+        padding: 18px 25px;
+        @include box-shadow( 0 0 5px rgba(0,0,0,0.3) );
+        position: absolute;
+        z-index: 9;
+        position: absolute;
+        top: 15px;
+        left: 95px;
+        max-width: 310px;
+        @include border-radius( 8px );
+    }
+}
+
+#map-canvas{ height: 315px; } 
+        
+#storeLocator{ 
+    position: relative;
+}
+#storeLocatorForm{
+    position: absolute;
+    left: 1%;
+    top: 4%;
+    width: 360px;
+    height: 290px;
+    z-index: 999;
+    border-radius: 4px;
+}
+#storeLocatorListWrapper{
+    height: 216px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#storeDropdownListWrap{
+    width: 89%;
+    border: 1px solid #d7d7d7;
+    height: 220px;
+    overflow: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    background: #fff;
+    z-index: 999;
+    line-height: 2.2em;
+    margin-top: -16px;
+}
+
+#storeDropdownListWrap div{
+    padding: 5px;
+}
+
+#storeDropdownListWrap div:hover{
+    background: #f7f7f7;
+}

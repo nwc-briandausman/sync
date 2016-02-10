@@ -1,0 +1,104 @@
+//Button Sizing Helpers
+.btn-xs, .btn-xs:hover{
+  @include sizing("btn", $buttonFontStandardSize - 0.25em);
+}
+
+.btn-sm, .btn-sm:hover{
+  @include sizing("btn", $buttonFontStandardSize - 0.1em );
+}
+
+.btn-md, .btn-md:hover{
+  @include sizing("btn", $buttonFontStandardSize);
+}
+
+.btn-lg, .btn-lg:hover{
+  @include sizing("btn", $buttonFontStandardSize + 0.25em );
+}
+
+.btn-xl, .btn-xl:hover{
+  @include sizing("btn", $buttonFontStandardSize + 0.75em );
+}
+
+//Font Sizing Helpers
+.font-8{
+  @include sizing("font", 8px);
+}
+
+.font-10{
+  @include sizing("font", 10px);
+}
+
+.font-12{
+  @include sizing("font", 12px);
+}
+
+.font-14{
+  @include sizing("font", 14px);
+}
+
+.font-16{
+  @include sizing("font", 16px);
+}
+
+.font-18{
+  @include sizing("font", 18px);
+}
+
+.font-21{
+  @include sizing("font", 21px);
+}
+
+.font-24{
+  @include sizing("font", 24px);
+}
+
+.font-28{
+  @include sizing("font", 28px);
+}
+
+.font-34{
+  @include sizing("font", 34px);
+}
+
+.font-36{
+  @include sizing("font", 36px);
+}
+
+.font-40{
+    @include sizing("font", 40px);
+}
+
+.font-48{
+  @include sizing("font", 48px);
+}
+
+.font-60{
+  @include sizing("font", 60px);
+}
+
+.font-72{
+  @include sizing("font", 72px);
+}
+
+@media #{$iphone}{
+    //Font Sizing Helpers
+    .font-8{ @include sizing("font", 6px); }
+    .font-10{ @include sizing("font", 8px); }
+    .font-12{ @include sizing("font", 10px); }
+    .font-14{ @include sizing("font", 12px); }
+    .font-16{ @include sizing("font", 14px); }
+    .font-18{ @include sizing("font", 16px); }
+    .font-21{ @include sizing("font", 18px); }
+    .font-24{ @include sizing("font", 21px); }
+    .font-28{ @include sizing("font", 24px); }
+    .font-34{ @include sizing("font", 28px); }
+    .font-36{ @include sizing("font", 28px); }
+    .font-40{ @include sizing("font", 36px); }
+    .font-48{ @include sizing("font", 36px); }
+    .font-60{ @include sizing("font", 48px); }
+    .font-72{ @include sizing("font", 48px); }
+}
+
+.weight-light{ font-weight: 300; }
+.weight-semi{ font-weight: 600; }
+.weight-black{ font-weight: 800; }
