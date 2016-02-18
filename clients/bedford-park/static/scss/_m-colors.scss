@@ -1,9 +1,18 @@
+$standardText: #444;
 $borderDefault: #afbac0;
 $primary: #0e3b64;
 $primary1: #00abca; 
 $primary2: #5f7079; 
 $primary3: #185E81;
 $primary4: #38474e;
+$primary5: #dff0ff;
+
+$gray0: #fcfcfc;
+$gray1: #9f9f9f; 
+$gray2: lighten( $standardText, 57% );
+$gray3: #d5d3d4;
+
+
 
 $primary5: #c4e7f9;
 $primary6: #0e4d6b;
@@ -12,15 +21,11 @@ $primary8: #d5f1fe;
 $primary9: #0f4579;
 $primary10: #083965;
 $primary11: #f0fafe;
-$standardText: #545454;
-$gray0: #f8f9fb;
-$gray1: #9f9f9f; 
-$gray2: lighten( $standardText, 57% );
-$gray3: #d5d3d4;
+
 $text: #574751;
 $paragraph: #9d9a9c;
 $cta: #efab0a;
-$cta2: #8a380b;
+$cta2: #ef554b;
 $success: #62C774;
 $danger: #FF4535;
 $offRed: #df2f22;

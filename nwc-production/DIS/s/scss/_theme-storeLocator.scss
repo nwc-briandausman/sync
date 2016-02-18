@@ -1,0 +1,83 @@
+#storeFinderLink{
+    position: relative;
+}
+
+#storeLocatorWrap{
+    &:before {
+        position: absolute;
+        top: -12px;
+        right: 48%;
+        display: inline-block;
+        border-right: 10px solid transparent;
+        border-bottom: 12px solid $borderDefault;
+        border-left: 12px solid transparent;
+        border-bottom-color: rgba(0,0,0,0.1);
+        content: '';
+    }
+
+    &:after {
+        position: absolute;
+        top: -10px;
+        right: 48%;
+        display: inline-block;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid $light;
+        border-left: 10px solid transparent;
+        content: '';
+    }
+    
+    width: 550px;
+    position: absolute;
+    right: 2%;
+    margin-top: 5px;
+    z-index:9995;
+    
+    #storeLocatorList{
+        max-height: 300px;
+        overflow-x: hidden;
+        overflow-y: scroll;    
+    }
+}
+
+.lt-ie9{
+    #storeLocatorWrap{
+        border: 1px solid $gray1;    
+    }
+}
+
+#mobileStoreLocatorWrap{
+    &:before {
+        position: absolute;
+        top: -12px;
+        right: 92px;
+        display: inline-block;
+        border-right: 10px solid transparent;
+        border-bottom: 12px solid $borderDefault;
+        border-left: 12px solid transparent;
+        border-bottom-color: rgba(0,0,0,0.1);
+        content: '';
+    }
+
+    &:after {
+        position: absolute;
+        top: -10px;
+        right: 92px;
+        display: inline-block;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid $light;
+        border-left: 10px solid transparent;
+        content: '';
+    }
+    
+    width: 90%;
+    position: absolute;
+    right: 5%;
+    margin-top: 5px;
+    z-index:9995;
+    
+    #mobileStoreLocatorList{
+        max-height: 300px;
+        overflow-x: hidden;
+        overflow-y: scroll;    
+    }
+}

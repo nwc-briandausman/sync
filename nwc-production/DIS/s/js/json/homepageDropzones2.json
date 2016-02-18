@@ -1,0 +1,151 @@
+{
+    "hero": [
+        {
+          "url": "http://www.google.com",
+          "alt": "test",
+          "srcXS": "/s/u/static/images/c/homepage/hero-preview.jpg",
+          "srcSM": "/s/u/static/images/c/homepage/hero-preview.jpg",
+          "srcMD": "/s/u/static/images/c/homepage/hero-preview.jpg",
+          "srcLG": "/s/u/static/images/c/homepage/hero-preview.jpg"
+        },
+        {
+          "url": "http://www.google.com",
+          "alt": "TEST2",
+          "srcXS": "/s/u/static/images/c/homepage/hero-preview.jpg",
+          "srcSM": "/s/u/static/images/c/homepage/hero-preview.jpg",
+          "srcMD": "/s/u/static/images/c/homepage/hero-preview.jpg",
+          "srcLG": "/s/u/static/images/c/homepage/hero-preview.jpg"
+        },
+        {
+          "url": "http://www.google.com",
+          "alt": "TEST3",
+          "srcXS": "/s/u/static/images/c/homepage/hero-preview.jpg",
+          "srcSM": "/s/u/static/images/c/homepage/hero-preview.jpg",
+          "srcMD": "/s/u/static/images/c/homepage/hero-preview.jpg",
+          "srcLG": "/s/u/static/images/c/homepage/hero-preview.jpg"
+        }
+    ],
+    "drop0": [
+        {
+            "key": 0,
+            "url": "http://1.com",
+            "alt": "save up to 50% of all appliances",
+            "srcXS": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcSM": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcMD": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcLG": "/s/u/static/images/c/homepage/clearance.jpg",
+            "sizeXS": "col-xs-6",
+            "sizeSM": "col-sm-6",
+            "sizeMD": "col-md-4",
+            "sizeLG": "col-lg-4"
+        },
+        {
+            "key": 1,
+            "url": "http://2.com",
+            "alt": "save up to 50% of all appliances",
+            "srcXS": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcSM": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcMD": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcLG": "/s/u/static/images/c/homepage/clearance.jpg",
+            "sizeXS": "col-xs-6",
+            "sizeSM": "col-sm-6",
+            "sizeMD": "col-md-4",
+            "sizeLG": "col-lg-4"
+        },
+        {
+            "key": 2,
+            "url": "http://3.com",
+            "alt": "save up to 50% of all appliances",
+            "srcXS": "",
+            "srcSM": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcMD": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcLG": "/s/u/static/images/c/homepage/clearance.jpg",
+            "sizeXS": "hidden-xs",
+            "sizeSM": "hidden-sm",
+            "sizeMD": "col-md-4",
+            "sizeLG": "col-lg-4"    
+        }
+    ],
+    "drop1": [
+        {
+            "key": 0,
+            "url": "http://4.com",
+            "alt": "save up to 50% of all appliances",
+            "srcXS": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcSM": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcMD": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcLG": "/s/u/static/images/c/homepage/clearance.jpg",
+            "sizeXS": "col-xs-6",
+            "sizeSM": "col-sm-6",
+            "sizeMD": "col-md-4",
+            "sizeLG": "col-lg-4"
+        },
+        {
+            "key": 1,
+            "url": "http://5.com",
+            "alt": "save up to 50% of all appliances",
+            "srcXS": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcSM": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcMD": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcLG": "/s/u/static/images/c/homepage/clearance.jpg",
+            "sizeXS": "col-xs-6",
+            "sizeSM": "col-sm-6",
+            "sizeMD": "col-md-4",
+            "sizeLG": "col-lg-4"
+        },
+        {
+            "key": 2,
+            "url": "http://6.com",
+            "alt": "save up to 50% of all appliances",
+            "srcXS": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcSM": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcMD": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcLG": "/s/u/static/images/c/homepage/clearance.jpg",
+            "sizeXS": "hidden-xs",
+            "sizeSM": "hidden-sm",
+            "sizeMD": "col-md-4",
+            "sizeLG": "col-lg-4"
+        }
+    ],
+    "drop2": [
+        {
+            "key": 0,
+            "url": "http://7.com",
+            "alt": "save up to 50% of all appliances",
+            "srcXS": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcSM": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcMD": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcLG": "/s/u/static/images/c/homepage/clearance.jpg",
+            "sizeXS": "col-xs-6",
+            "sizeSM": "col-sm-6",
+            "sizeMD": "col-md-4",
+            "sizeLG": "col-lg-4"
+        },
+        {
+            "key": 1,
+            "url": "http://8.com",
+            "alt": "save up to 50% of all appliances",
+            "srcXS": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcSM": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcMD": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcLG": "/s/u/static/images/c/homepage/clearance.jpg",
+            "sizeXS": "col-xs-6",
+            "sizeSM": "col-sm-6",
+            "sizeMD": "col-md-4",
+            "sizeLG": "col-lg-4"
+        },
+        {
+            "key": 2,
+            "url": "http://9.com",
+            "alt": "save up to 50% of all appliances",
+            "srcXS": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcSM": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcMD": "/s/u/static/images/c/homepage/clearance.jpg",
+            "srcLG": "/s/u/static/images/c/homepage/clearance.jpg",
+            "sizeXS": "hidden-xs",
+            "sizeSM": "hidden-sm",
+            "sizeMD": "col-md-4",
+            "sizeLG": "col-lg-4"
+        }
+    ]
+}

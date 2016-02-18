@@ -37,7 +37,7 @@
 		<!-- Primary Page Layout
         ================================================== -->   
         <section>
-            <header class="padding-vert-xs bordered--xs lh-5">
+            <header class="row padding-vert-xs bordered--xs lh-5">
                 <div class="container">
                     <div class="col-xs-12 col-md-3">
                         <a href="<?php bloginfo('url'); ?>">

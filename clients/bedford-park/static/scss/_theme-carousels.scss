@@ -34,3 +34,14 @@
         display: none !important; 
     }
 }
+
+#hero{
+    position: relative;
+    
+    aside{
+        position: absolute;
+        top: 23%;
+        left: 0;
+        width: 100%;
+    }
+}

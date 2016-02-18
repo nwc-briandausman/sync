@@ -1,0 +1,131 @@
+{
+    "heroXS": "/s/u/static/images/c/homepage/hero-xs.jpg",
+    "heroSM": "/s/u/static/images/c/homepage/hero-sm.jpg",
+    "heroMD": "/s/u/static/images/c/homepage/hero-md.jpg",
+    "heroLG": "/s/u/static/images/c/homepage/hero.jpg",
+    "heroLink": "http://google.com",
+    "heroAlt": "save up to 50% of all appliances",
+    "drop0": [
+        {
+            "key": 0,
+            "url": "http://a.com",
+            "alt": "save up to 50% of all appliances",
+            "srcXS": "/s/u/static/images/c/homepage/drop1-xs.jpg",
+            "srcSM": "/s/u/static/images/c/homepage/drop1-sm.jpg",
+            "srcMD": "/s/u/static/images/c/homepage/drop1-md.jpg",
+            "srcLG": "/s/u/static/images/c/homepage/drop1-lg.jpg",
+            "sizeXS": "col-xs-6",
+            "sizeSM": "col-sm-6",
+            "sizeMD": "col-md-4",
+            "sizeLG": "col-lg-4"
+        },
+        {
+            "key": 1,
+            "url": "http://b.com",
+            "alt": "save up to 50% of all appliances",
+            "srcXS": "/s/u/static/images/c/homepage/drop1-xs.jpg",
+            "srcSM": "/s/u/static/images/c/homepage/drop1-sm.jpg",
+            "srcMD": "/s/u/static/images/c/homepage/drop1-md.jpg",
+            "srcLG": "/s/u/static/images/c/homepage/drop1-lg.jpg",
+            "sizeXS": "col-xs-6",
+            "sizeSM": "col-sm-6",
+            "sizeMD": "col-md-4",
+            "sizeLG": "col-lg-4"
+        },
+        {
+            "key": 2,
+            "url": "http://c.com",
+            "alt": "save up to 50% of all appliances",
+            "srcXS": "",
+            "srcSM": "/s/u/static/images/c/homepage/drop1-sm.jpg",
+            "srcMD": "/s/u/static/images/c/homepage/drop1-md.jpg",
+            "srcLG": "/s/u/static/images/c/homepage/drop1-lg.jpg",
+            "sizeXS": "hidden-xs",
+            "sizeSM": "hidden-sm",
+            "sizeMD": "col-md-4",
+            "sizeLG": "col-lg-4"
+        }
+    ],
+    "drop1": [
+        {
+            "key": 0,
+            "url": "http://1.com",
+            "alt": "save up to 50% of all appliances",
+            "srcXS": "/s/u/static/images/c/homepage/drop1-xs.jpg",
+            "srcSM": "/s/u/static/images/c/homepage/drop1-sm.jpg",
+            "srcMD": "/s/u/static/images/c/homepage/drop1-md.jpg",
+            "srcLG": "/s/u/static/images/c/homepage/drop1-lg.jpg",
+            "sizeXS": "col-xs-6",
+            "sizeSM": "col-sm-6",
+            "sizeMD": "col-md-4",
+            "sizeLG": "col-lg-4"
+        },
+        {
+            "key": 1,
+            "url": "http://2.com",
+            "alt": "save up to 50% of all appliances",
+            "srcXS": "/s/u/static/images/c/homepage/drop1-xs.jpg",
+            "srcSM": "/s/u/static/images/c/homepage/drop1-sm.jpg",
+            "srcMD": "/s/u/static/images/c/homepage/drop1-md.jpg",
+            "srcLG": "/s/u/static/images/c/homepage/drop1-lg.jpg",
+            "sizeXS": "col-xs-6",
+            "sizeSM": "col-sm-6",
+            "sizeMD": "col-md-4",
+            "sizeLG": "col-lg-4"
+        },
+        {
+            "key": 2,
+            "url": "http://3.com",
+            "alt": "save up to 50% of all appliances",
+            "srcXS": "/s/u/static/images/c/homepage/drop1-xs.jpg",
+            "srcSM": "/s/u/static/images/c/homepage/drop1-sm.jpg",
+            "srcMD": "/s/u/static/images/c/homepage/drop1-md.jpg",
+            "srcLG": "/s/u/static/images/c/homepage/drop1-lg.jpg",
+            "sizeXS": "hidden-xs",
+            "sizeSM": "hidden-sm",
+            "sizeMD": "col-md-4",
+            "sizeLG": "col-lg-4"
+        }
+    ],
+    "drop2": [
+        {
+            "key": 0,
+            "url": "http://x.com",
+            "alt": "save up to 50% of all appliances",
+            "srcXS": "/s/u/static/images/c/homepage/drop1-xs.jpg",
+            "srcSM": "/s/u/static/images/c/homepage/drop1-sm.jpg",
+            "srcMD": "/s/u/static/images/c/homepage/drop1-md.jpg",
+            "srcLG": "/s/u/static/images/c/homepage/drop1-lg.jpg",
+            "sizeXS": "col-xs-6",
+            "sizeSM": "col-sm-6",
+            "sizeMD": "col-md-4",
+            "sizeLG": "col-lg-4"
+        },
+        {
+            "key": 1,
+            "url": "http://y.com",
+            "alt": "save up to 50% of all appliances",
+            "srcXS": "/s/u/static/images/c/homepage/drop1-xs.jpg",
+            "srcSM": "/s/u/static/images/c/homepage/drop1-sm.jpg",
+            "srcMD": "/s/u/static/images/c/homepage/drop1-md.jpg",
+            "srcLG": "/s/u/static/images/c/homepage/drop1-lg.jpg",
+            "sizeXS": "col-xs-6",
+            "sizeSM": "col-sm-6",
+            "sizeMD": "col-md-4",
+            "sizeLG": "col-lg-4"
+        },
+        {
+            "key": 2,
+            "url": "http://z.com",
+            "alt": "save up to 50% of all appliances",
+            "srcXS": "/s/u/static/images/c/homepage/drop1-xs.jpg",
+            "srcSM": "/s/u/static/images/c/homepage/drop1-sm.jpg",
+            "srcMD": "/s/u/static/images/c/homepage/drop1-md.jpg",
+            "srcLG": "/s/u/static/images/c/homepage/drop1-lg.jpg",
+            "sizeXS": "hidden-xs",
+            "sizeSM": "hidden-sm",
+            "sizeMD": "col-md-4",
+            "sizeLG": "col-lg-4"
+        }
+    ]
+}
