@@ -4,17 +4,26 @@
 */
 ?>
 
-<section id="upperHeader" class="bg--primary padding-xs">
+<section id="upperHeader" class="bg--primary padding-xs hidden-xs">
     <div class="container font--light">
         <div class="col-xs-6 font-21">
-            <i class="fa fa-twitter"></i>
-            &nbsp;&nbsp;
-            <i class="fa fa-facebook"></i>
-            &nbsp;&nbsp;
-            <i class="fa fa-google-plus"></i>
+            <?php if(get_theme_mod("nwc_facebook")){ ?>
+                <a href="<?php echo get_theme_mod("nwc_facebook"); ?>" class="font--light"><i class="fa fa-facebook"></i>&nbsp;&nbsp;</a>
+            <?php } ?>
+            <?php if(get_theme_mod("nwc_twitter")){ ?>
+                <a href="<?php echo get_theme_mod("nwc_twitter"); ?>" class="font--light"><i class="fa fa-twitter"></i>&nbsp;&nbsp;</a>
+            <?php } ?>
+            <?php if(get_theme_mod("nwc_gPlus")){ ?>
+                <a href="<?php echo get_theme_mod("nwc_gPlus"); ?>" class="font--light"><i class="fa fa-google-plus"></i>&nbsp;&nbsp;</a>
+            <?php } ?>
         </div>
         <div class="col-xs-6 text-right">
-            <i class="fa fa-phone font--cta"></i> (708) 458-2067 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-map-marker font--cta"></i>  6701 S. Archer Road, Bedford Park, IL 60501
+            <?php if(get_theme_mod("nwc_phone")){ ?>
+                <i class="fa fa-phone font--cta"></i> <?php echo get_theme_mod("nwc_phone"); ?> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <?php } ?>
+            <?php if(get_theme_mod("nwc_address")){ ?>
+                <i class="fa fa-map-marker font--cta"></i>  <?php echo get_theme_mod("nwc_address"); ?>
+            <?php } ?>
         </div>
     </div>
 </section>

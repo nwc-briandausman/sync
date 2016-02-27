@@ -2,7 +2,6 @@
 
 <?php /* start the loop */ ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
     <?php the_ID(); ?> <!-- post id -->
     <?php post_class('loop-post clearfix'); ?> <!-- class to add to post wrapper
 

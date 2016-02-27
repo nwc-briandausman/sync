@@ -1,5 +1,5 @@
 body{
-    font: 16px/26px "Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font: 16px/26px "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -8,6 +8,7 @@ p {
   color: $standardText;
 }
 
+.lora{ font-family: 'Lora', serif; font-style: italic; }
 /**************************************
 / Headings
 **************************************/

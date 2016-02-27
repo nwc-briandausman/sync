@@ -8,59 +8,62 @@ Template Name: Homepage
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <main>
+        <section id="hero">
+            <?php
+                echo include (get_template_directory() . '/lib/options/nwc-hero/hero.php');
+            ?>
+        </section>
         <div class="row">
-            <section id="hero" class="col-xs-12 text-center text-shadow--xs">
-                <div class="rotator">
-                    <img src="/wp-content/themes/bedford-park/static/images/rotator2.jpg" />
-                </div>
-                <aside>
-                    <h3 class="font-34 font--primary5">Welcome To</h3>
-                    <h2 class="font-60 font--light padding-vert-md">The Village of Bedford Park</h2>
-                    <a href="#" class="btn btn--cta2 btn--3d font-21"><strong>Learn About Us</strong></a>
-                </aside>
-            </section>
-
             <section id="main" class="clear container padding-vert-md">
                 <div class="col-xs-12 col-md-8">
                     <div id="about" class="col-xs-12">
-                        <h1 class="font--primary padding-vert-sm">About the Village</h1>
-                        <p class="lh-md">
-                            The Village of Bedford Park is an Illinois Home Rule community located on the southwestern border of the Chicago city limits. The village is near Chicago’s Midway Airport and is minutes away from downtown Chicago. It is part of an Illinois enterprise zone and is also an integral partner of the Illinois and Michigan Heritage Canal Corridor where the IM HCC Visitors Center is located in the heart of the Village. We believe we have the perfect combination of a great place to live and a great place to do business in. Thank you for visiting our web site and if you have any questions, please do not hesitate to contact us!
-                        </p>
-                        <br>
+                        <?php the_content(); ?>
                     </div>
-                    <div id="quicklinks">
-                        <div class="col-xs-12">
-                            <h1 class="font--primary padding-vert-sm">Quick Links</h1>
-                            <p class="lh-md bg--gray0 padding-vert-md bordered--xs bordered--gray2 text-center">
-                                <a href="#" class="font--cta2 bordered--right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>For Residents</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                                <a href="#" class="font--cta2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Why Bedford Park</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> 
-                                <a href="#" class="font--cta2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>For Business</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                                <a href="#" class="font--cta2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>About the Village</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                            </p>
+                    <?php if( get_theme_mod("nwc_quicklinks") ){ ?>
+                        <div id="quicklinks" class="hidden-xs">
+                            <div class="col-xs-12">
+                                <h1 class="font--primary padding-vert-sm lora">Quick Links</h1>
+                                <p class="lh-md bg--gray0 padding-vert-md bordered--xs bordered--gray2 text-center">
+                                    <?php
+                                    /* 
+                                     * Nav with nothing wrapped around it
+                                     * Used to remove unwanted li/uls
+                                    */ 
+                                    $args = array(
+                                        'menu'            => 'Quick Links',
+                                        'container'       => false,
+                                        'echo'            => false,
+                                        'items_wrap'      => '%3$s',
+                                        'depth'           => 0,
+                                    );
+                                    echo strip_tags(wp_nav_menu( $args ), '<a>' ); 
+
+                                    ?>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <br>
+                    <?php } ?>
+                    <br class="clear"><br>
                     <div id="helpfulLinks">
-                        <div class="col-xs-6">
-                            <img src="/wp-content/themes/bedford-park/static/images/quicklink1.jpg" class="img-responsive" />
-                            <br><br>
-                        </div>
-                        <div class="col-xs-6">
-                            <img src="/wp-content/themes/bedford-park/static/images/quicklink2.jpg" class="img-responsive" />
-                            <br><br>
-                        </div>
-                        <div class="col-xs-6">
-                            <img src="/wp-content/themes/bedford-park/static/images/quicklink2.jpg" class="img-responsive" />
-                        </div>
-                        <div class="col-xs-6">
-                            <img src="/wp-content/themes/bedford-park/static/images/quicklink1.jpg" class="img-responsive" />
-                        </div>
+                    <?php if( get_theme_mod("nwc_helpfulLinks") ){ 
+                        for ($x = 1; $x <= 4; $x++) {
+                            if( get_theme_mod("nwc_helpful" . $x . "_link") ){ ?>
+                                <div class="col-xs-6">
+                                    <a href="<?php echo get_theme_mod("nwc_helpful" . $x . "_link") ?>">
+                                        <img src="<?php echo get_theme_mod("nwc_helpful_image" . $x) ?>" class="img-responsive" />
+                                    </a>
+                                    <br><br>
+                                </div>
+                            <?php }
+                        }
+                     } ?>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-4">
                     <div id="waterBill" class="padding-vert-sm">
-                        <a href="#"><img src="/wp-content/themes/bedford-park/static/images/waterBill.jpg" class="img-responsive" /></a>
+                        <?php if( get_theme_mod("nwc_water") ){ ?>
+                            <a href="http://www.paymentservicenetwork.com/" target="_blank"><img src="/wp-content/themes/bedford-park/static/images/waterBill.jpg" class="img-responsive" /></a>
+                        <?php } ?>
                         <br>
                     </div>
                     <div id="events">
@@ -97,28 +100,27 @@ Template Name: Homepage
                     <div id="news">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <a href="#" class="font--cta2 pull-right">view all &raquo;</a>
+                                <?php echo '<a href="' . get_permalink( get_option( 'page_for_posts' ) ) . '" class="font--cta2 pull-right">view all &raquo;</a>'; ?>
                                 <h3 class="font--primary"><i class="fa fa-bell-o"></i>&nbsp;&nbsp;<strong>Latest News</strong></h3>
                             </div>
                             <div class="panel-body padding--none">
-                                <aside class="padding-md bordered--bottom bordered--gray3">
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <strong>Title</strong>
-                                            <br>
-                                            Jan Blah Blah Blah
+                                <?php 
+                                global $post;
+                                $postCount = get_posts('numberposts=5');
+
+                                foreach($postCount as $post) :
+                                    setup_postdata($post);
+                                ?>
+                                    <aside class="padding-md bordered--bottom bordered--gray3">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <a href="<?php the_permalink(); ?>" class="font--dark"><strong><?php the_title(); ?></strong></a>
+                                                <br>
+                                                <span class="font--gray1">Posted on <?php the_time('d/m/Y'); ?> </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </aside>
-                                <aside class="padding-md">
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <strong>Title</strong>
-                                            <br>
-                                            Jan Blah Blah Blah
-                                        </div>
-                                    </div>
-                                </aside>
+                                    </aside>
+                                <?php endforeach; ?>
                             </div>
                         </div>
                     </div>

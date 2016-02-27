@@ -1,32 +1,5 @@
-#topCategories{
-    .topCategoryWrap{
-        position: relative;
-        
-        div{
-            position: absolute;
-            top: 35%;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            padding: 15px 0;
-            color: $light;
-            background: $primary;
-            opacity: 0.8;
-        }
-        
-        &:hover div{
-            line-height: 50px;
-            top: 29%;
-        }
-    }
-}
-
-#apparelSection{
-    background: url(http://www.searsoutlet.com/w/img/ApparelBanner_1025x104_r1.12152014jpg.jpg) 480px top no-repeat;
-}
-
-@media #{ $tabletV-smaller }{
-    #apparelSection{
-        background: url(http://www.searsoutlet.com/w/img/ApparelBanner_1025x104_r1.12152014jpg.jpg) 180px bottom no-repeat;
-    }
+#quicklinks a{
+    padding: 0px 30px;
+    color: #ef554b;
+    font-weight: bold;
 }

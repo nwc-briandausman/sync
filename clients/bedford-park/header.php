@@ -23,7 +23,8 @@
         
         <!-- css -->
         <link href="<?php bloginfo('template_directory'); ?>/static/css/site.min.css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -37,31 +38,31 @@
 		<!-- Primary Page Layout
         ================================================== -->   
         <section>
-            <header class="row padding-vert-xs bordered--xs lh-5">
+            <header class="row bordered--xs lh-5">
                 <div class="container">
-                    <div class="col-xs-12 col-md-3">
+                    <div class="col-xs-8 col-xs-offset-2 col-md-3 col-md-offset-0">
                         <a href="<?php bloginfo('url'); ?>">
-                            <img src="<?php echo get_template_directory_uri(); ?>/static/images/logo.jpg" alt="<?php bloginfo('url'); ?>" class="img-responsive" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/static/images/logo.jpg" alt="<?php bloginfo('url'); ?>" class="img-responsive padding-vert-sm" />
                         </a>  
                     </div>
                     <div class="col-md-9 text-right">
-                        <nav id="mainNav">
-                            <?php
-                            /* 
-                             * Nav with nothing wrapped around it
-                             * Used to remove unwanted li/uls
-                            */ 
-                            $args = array(
-                                'menu'            => 'mainMenu',
-                                'menu_class'      => 'list list-unstyled',
-                                'container'       => false,
-                                'echo'            => false,
-                                'items_wrap'      => '%3$s',
-                                'depth'           => 0,
-                            );
-                            echo strip_tags(wp_nav_menu( $args ), '<a>' ); 
-
-                            ?>
+                        <i id="mobileNav" class="fa fa-bars visible-xs visible-sm"></i>
+                        <nav id="navWrap">
+                            <?php 
+                                $defaults = array(
+                                    'menu'            => 'main',
+                                    'container'       => 'div',
+                                    'container_class' => '',
+                                    'container_id'    => '',
+                                    'menu_class'      => 'menu',
+                                    'echo'            => true,
+                                    'fallback_cb'     => 'wp_page_menu',
+                                    'before'          => '',
+                                    'after'           => '',
+                                    'items_wrap'      => '<ul id="%1$s" class="%2$s nav nav-pills pull-right">%3$s</ul>',
+                                );
+                                wp_nav_menu( $defaults ); 
+                            ?> 
                         </nav>
                     </div>
                 </div>

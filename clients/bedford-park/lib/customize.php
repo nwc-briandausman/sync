@@ -4,154 +4,308 @@
  * in the php file you want to display the option
  * add the below code. 
  * Change 'setting name' to whichever add_setting name you wish to use
- * <?php echo get_theme_mod("nwc_font"); ?>
+ * <?php echo get_theme_mod("{{setting_name}}"); ?> 
 */ 
-
 function nwc_register_theme_customizer( $wp_customize ) {
+    /*** Start Header Options ***/
     //create a new section
-	$wp_customize->add_section(
-		'nwc_homepage_options',
-		array(
-			'title'     => 'Homepage Options',   //title
-			'priority'  => 200                   //positioning
-		)
-	);
+    $wp_customize->add_section(
+        'nwc_header_options',
+        array(
+            'title'     => 'Header Options',   //title
+            'priority'  => 200                   //positioning
+        )
+    );
+    
+    $wp_customize->add_setting(
+        'nwc_facebook',
+        array(
+            'default'            => '',
+            'transport'          => 'postMessage'
+        )
+    );
 
-	//Checkbox example
-	$wp_customize->add_setting(
-		'nwc_display_header',
-		array(
-			'default'    	    =>  'true',
-			'sanitize_callback' => 'nwc_sanitize_input',
-			'transport'  	    =>  'postMessage'
-		)
-	);
+    $wp_customize->add_control(
+        'nwc_facebook',
+        array(
+            'section'  => 'nwc_header_options',
+            'label'    => 'Facebook Link',
+            'type'     => 'option'
+        )
+    );
+    
+    $wp_customize->add_setting(
+        'nwc_twitter',
+        array(
+            'default'            => '',
+            'transport'          => 'postMessage'
+        )
+    );
 
-	$wp_customize->add_control(
-		'nwc_display_header',
-		array(
-			'section'   => 'nwc_homepage_options',
-			'label'     => 'Display Header?',
-			'type'      => 'checkbox'
-		)
-	);
+    $wp_customize->add_control(
+        'nwc_twitter',
+        array(
+            'section'  => 'nwc_header_options',
+            'label'    => 'Twitter Link',
+            'type'     => 'option'
+        )
+    );
+    
+    $wp_customize->add_setting(
+        'nwc_gPlus',
+        array(
+            'default'            => '',
+            'transport'          => 'postMessage'
+        )
+    );
+
+    $wp_customize->add_control(
+        'nwc_gPlus',
+        array(
+            'section'  => 'nwc_header_options',
+            'label'    => 'Google Plus Link',
+            'type'     => 'option'
+        )
+    );
+    
+    $wp_customize->add_setting(
+        'nwc_phone',
+        array(
+            'default'            => '',
+            'transport'          => 'postMessage'
+        )
+    );
+
+    $wp_customize->add_control(
+        'nwc_phone',
+        array(
+            'section'  => 'nwc_header_options',
+            'label'    => 'Phone Number',
+            'type'     => 'option'
+        )
+    );
+    
+    $wp_customize->add_setting(
+        'nwc_address',
+        array(
+            'default'            => '',
+            'transport'          => 'postMessage'
+        )
+    );
+
+    $wp_customize->add_control(
+        'nwc_address',
+        array(
+            'section'  => 'nwc_header_options',
+            'label'    => 'Address',
+            'type'     => 'option'
+        )
+    );
+    
+    
+    /*** Start Homepage Options ***/
+    //create a new section
+    $wp_customize->add_section(
+        'nwc_homepage_options',
+        array(
+            'title'     => 'Homepage Options',   //title
+            'priority'  => 200                   //positioning
+        )
+    );
+    
+    $wp_customize->add_setting(
+        'nwc_water',
+        array(
+            'default'    	    =>  'true',
+            'transport'  	    =>  'postMessage'
+        )
+    );
+
+    $wp_customize->add_control(
+        'nwc_water',
+        array(
+            'section'   => 'nwc_homepage_options',
+            'label'     => 'Display the Water Bill Button',
+            'type'      => 'checkbox'
+        )
+    );
+    
+    $wp_customize->add_setting(
+        'nwc_quicklinks',
+        array(
+            'default'    	    =>  'true',
+            'transport'  	    =>  'postMessage'
+        )
+    );
+
+    $wp_customize->add_control(
+        'nwc_quicklinks',
+        array(
+            'section'   => 'nwc_homepage_options',
+            'label'     => 'Display the Quicklinks? Manage via "Menus"',
+            'type'      => 'checkbox'
+        )
+    );
+    
+    $wp_customize->add_setting(
+        'nwc_helpfulLinks',
+        array(
+            'default'    	    =>  'true',
+            'transport'  	    =>  'postMessage'
+        )
+    );
+
+    $wp_customize->add_control(
+        'nwc_helpfulLinks',
+        array(
+            'section'   => 'nwc_homepage_options',
+            'label'     => 'Display the Helpful Links?',
+            'type'      => 'checkbox'
+        )
+    );
+    
+    for ($x = 1; $x <= 4; $x++) {
+        $wp_customize->add_setting(
+            'nwc_helpful_image' . $x,
+            array(
+                'default' => '',
+            )
+        );
+
+        $wp_customize->add_control(
+            new WP_Customize_Image_Control(
+                $wp_customize,
+                'nwc_helpful_image' . $x,
+                array(
+                    'label' => 'Image ' . $x . '',
+                    'section' => 'nwc_homepage_options',
+                    'settings' => 'nwc_helpful_image' . $x
+                )
+            )
+        );
+
+        $wp_customize->add_setting(
+        'nwc_helpful' . $x . '_link',
+            array(
+                'default'            => '',
+                'transport'          => 'postMessage'
+            )
+        );
+
+        $wp_customize->add_control(
+            'nwc_helpful' . $x . '_link',
+            array(
+                'section'  => 'nwc_homepage_options',
+                'label'    => 'Image ' . $x . ' Link',
+                'type'     => 'option'
+            )
+        );
+        /*** End Hero Options ***/
+    }
+    
+    /*** Start Hero Options ***/
+    //create a new section
+    $wp_customize->add_section(
+        'nwc_hero_options',
+        array(
+            'title'     => 'Homepage Rotator',   //title
+            'priority'  => 200                   //positioning
+        )
+    );
+
+    //Checkbox example
+    $wp_customize->add_setting(
+        'nwc_hero_enable',
+        array(
+            'default'    	    =>  'true',
+            'transport'  	    =>  'postMessage'
+        )
+    );
+
+    $wp_customize->add_control(
+        'nwc_hero_enable',
+        array(
+            'section'   => 'nwc_hero_options',
+            'label'     => 'Display a Rotator?',
+            'type'      => 'checkbox'
+        )
+    );
     //e: checkbox example
 
-	//radio example
-	$wp_customize->add_setting(
-		'nwc_color_scheme',
-		array(
-			'default'   	    => 'normal',
-			'sanitize_callback' => 'nwc_sanitize_input',
-			'transport' 	    => 'postMessage'
-		)
-	);
+    for ($x = 1; $x <= 5; $x++) {
+        $wp_customize->add_setting(
+            'nwc_hero_image' . $x,
+            array(
+                'default' => '',
+            )
+        );
 
-	$wp_customize->add_control(
-		'nwc_color_scheme',
-		array(
-			'section'  => 'nwc_homepage_options',
-			'label'    => 'Color Scheme',
-			'type'     => 'radio',
-			'choices'  => array(
-				'normal'    => 'Normal',
-				'inverse'   => 'Inverse'
-			)
-		)
-	);
-    //e: radio example
+        $wp_customize->add_control(
+            new WP_Customize_Image_Control(
+                $wp_customize,
+                'nwc_hero_image' . $x,
+                array(
+                    'label' => 'Image ' . $x . '',
+                    'section' => 'nwc_hero_options',
+                    'settings' => 'nwc_hero_image' . $x
+                )
+            )
+        );
 
-	//select example
-	$wp_customize->add_setting(
-		'nwc_font',
-		array(
-			'default'   	    => 'times',
-			'sanitize_callback' => 'nwc_sanitize_input',
-			'transport' 	    => 'postMessage'
-		)
-	);
+        //textbox example
+        $wp_customize->add_setting(
+        'nwc_rot' . $x . '_link',
+            array(
+                'default'            => 'http://google.com',
+                'transport'          => 'postMessage'
+            )
+        );
 
-	$wp_customize->add_control(
-		'nwc_font',
-		array(
-			'section'  => 'nwc_homepage_options',
-			'label'    => 'Theme Font',
-			'type'     => 'select',
-			'choices'  => array(
-				'times'     => 'Times New Roman',
-				'arial'     => 'Arial',
-				'courier'   => 'Courier New'
-			)
-		)
-	);
-    //e: select example
+        $wp_customize->add_control(
+            'nwc_rot' . $x . '_link',
+            array(
+                'section'  => 'nwc_hero_options',
+                'label'    => 'Image ' . $x . ' Link',
+                'type'     => 'option'
+            )
+        );
 
-	//textbox example
-	$wp_customize->add_setting(
-		'nwc_footer_copyright_text',
-		array(
-			'default'            => 'All Rights Reserved',
-			'sanitize_callback'  => 'nwc_sanitize_input',
-			'transport'          => 'postMessage'
-		)
-	);
+        $wp_customize->add_setting(
+            'nwc_rot_text' . $x,
+            array(
+                'default'            => 'Welcome to our website',
+                'transport'          => 'postMessage'
+            )
+        );
 
-	$wp_customize->add_control(
-		'nwc_footer_copyright_text',
-		array(
-			'section'  => 'nwc_homepage_options',
-			'label'    => 'Copyright Message',
-			'type'     => 'text'
-		)
-	);
-    //e: textbox example
+        $wp_customize->add_control(
+            'nwc_rot_text' . $x,
+            array(
+                'section'  => 'nwc_hero_options',
+                'label'    => 'Image ' . $x . ' Text',
+                'type'     => 'option'
+            )
+        );
+        
+        $wp_customize->add_setting(
+            'nwc_button' . $x,
+            array(
+                'default'            => 'Learn More',
+                'transport'          => 'postMessage'
+            )
+        );
+
+        $wp_customize->add_control(
+            'nwc_button' . $x,
+            array(
+                'section'  => 'nwc_hero_options',
+                'label'    => 'Button ' . $x . ' Text',
+                'type'     => 'option'
+            )
+        );
+        /*** End Hero Options ***/
+    } 
+    
 } // end nwc_register_theme_customizer
 add_action( 'customize_register', 'nwc_register_theme_customizer' );
-
-/*********************
-Sanitize
-*********************/
-function nwc_sanitize_input( $input ) {
-	return strip_tags( stripslashes( $input ) );
-}
-
-/*********************
-Sanitize
-    - Writes styles out the `<head>` element of the page based on the configuration options saved in the Theme Customizer.
-*********************/function nwc_customizer_css() {
 ?>
-	 <style type="text/css">
-
-		 body {
-
-		 	font-family: <?php echo get_theme_mod( 'nwc_font' ); ?>;
-
-		 	<?php if ( 'normal' === get_theme_mod( 'nwc_color_scheme' ) || '' === get_theme_mod( 'nwc_color_scheme' ) ) { ?>
-
-			 	background: #fff;
-			 	color:      #000;
-
-		 	<?php } else { ?>
-
-			 	background: #000;
-			 	color:      #fff;
-
-		 	<?php } // end if/else ?>
-
-		 	<?php if ( 0 < count( strlen( ( $background_image_url = get_theme_mod( 'nwc_background_image' ) ) ) ) ) { ?>
-		 		background-image: url( <?php echo $background_image_url; ?> );
-		 	<?php } // end if ?>
-
-		 }
-
-	     a { color: <?php echo get_theme_mod( 'nwc_link_color' ); ?>; }
-
-		<?php if( false === get_theme_mod( 'nwc_display_header' ) ) { ?>
-			#header { display: none; }
-		<?php } // end if ?>
-
-	 </style>
-<?php
-}
-add_action( 'wp_head', 'nwc_customizer_css' );
-add_action( 'customize_preview_init', 'nwc_customizer_live_preview' );

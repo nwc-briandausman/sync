@@ -43,8 +43,6 @@ $experimental-support-for-khtml : false !default;
 @import "bs-carousels";
 @import "bs-tools";
 
-//@import "jasny-bootstrap.css";
-
 //so basics
 @import "so-links";
 @import "so-typography";
@@ -65,28 +63,11 @@ $experimental-support-for-khtml : false !default;
 @import "so-animations";
 @import "so-backgrounds";
 
-//so components
-@import "so-dropdowns";
-
-//third party
-@import "fontawesome";
-@import "icons";
-@import "owl.carousel";
-@import "owl.theme.default";
-@import "theme-brAutosuggest";
 
 //so specifics
 @import "theme-homepage";
-@import "theme-plp";
-@import "theme-facets";
 @import "theme-components";
 @import "theme-modals";
 @import "theme-mainMenu";
-@import "theme-minicart";
-@import "theme-storeLocator";
-@import "theme-liveperson";
 @import "theme-loading";
 @import "theme-carousels";
-@import "theme-addThis";
-@import "theme-review";
-@import "theme-quickView";
