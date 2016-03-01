@@ -5,14 +5,22 @@
  */
 function nwc_register_sidebars() {
 	register_sidebar( array(
-		'name'          => 'Home right sidebar',
-		'id'            => 'home_right_1',
+		'name'          => 'Blog Sidebar',
+		'id'            => 'blog_sidebar',
 		'before_widget' => '<div>',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2 class="rounded">',
 		'after_title'   => '</h2>',
 	) );
-
+    
+    register_sidebar( array(
+		'name'          => 'Page Sidebar',
+		'id'            => 'page_sidebar',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'nwc_register_sidebars' );
 ?>

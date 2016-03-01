@@ -22,7 +22,7 @@ Template Name: Homepage
                     <?php if( get_theme_mod("nwc_quicklinks") ){ ?>
                         <div id="quicklinks" class="hidden-xs">
                             <div class="col-xs-12">
-                                <h1 class="font--primary padding-vert-sm lora">Quick Links</h1>
+                                <h1 class="font--dark padding-vert-sm lora">Quick Links</h1>
                                 <p class="lh-md bg--gray0 padding-vert-md bordered--xs bordered--gray2 text-center">
                                     <?php
                                     /* 
@@ -62,7 +62,7 @@ Template Name: Homepage
                 <div class="col-xs-12 col-md-4">
                     <div id="waterBill" class="padding-vert-sm">
                         <?php if( get_theme_mod("nwc_water") ){ ?>
-                            <a href="http://www.paymentservicenetwork.com/" target="_blank"><img src="/wp-content/themes/bedford-park/static/images/waterBill.jpg" class="img-responsive" /></a>
+                            <a href="http://www.paymentservicenetwork.com/" target="_blank"><img src="wp-content/themes/bedford-park/static/images/waterBill.jpg" class="img-responsive" /></a>
                         <?php } ?>
                         <br>
                     </div>
@@ -70,7 +70,7 @@ Template Name: Homepage
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <a href="#" class="font--cta2 pull-right">view all &raquo;</a>
-                                <h3 class="font--primary"><i class="fa fa-calendar-o"></i>&nbsp;&nbsp;<strong>Events</strong></h3>
+                                <h4 class="font--dark"><i class="fa fa-calendar-o font--gray1"></i>&nbsp;&nbsp;<strong>Events</strong></h4>
                             </div>
                             <div class="panel-body padding--none">
                                 <aside class="padding-md bordered--bottom bordered--gray3">
@@ -79,7 +79,7 @@ Template Name: Homepage
                                         <div class="col-xs-10">
                                             <strong>Title</strong>
                                             <br>
-                                            Jan Blah Blah Blah
+                                            Jan 14th
                                         </div>
                                     </div>
                                 </aside>
@@ -89,7 +89,7 @@ Template Name: Homepage
                                         <div class="col-xs-10">
                                             <strong>Title</strong>
                                             <br>
-                                            Jan Blah Blah Blah
+                                            Jan 14th
                                         </div>
                                     </div>
                                 </aside>
@@ -101,7 +101,7 @@ Template Name: Homepage
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <?php echo '<a href="' . get_permalink( get_option( 'page_for_posts' ) ) . '" class="font--cta2 pull-right">view all &raquo;</a>'; ?>
-                                <h3 class="font--primary"><i class="fa fa-bell-o"></i>&nbsp;&nbsp;<strong>Latest News</strong></h3>
+                                <h4 class="font--dark"><i class="fa fa-bell-o font--gray1"></i>&nbsp;&nbsp;<strong>Latest News</strong></h4>
                             </div>
                             <div class="panel-body padding--none">
                                 <?php 

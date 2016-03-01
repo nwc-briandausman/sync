@@ -13,7 +13,7 @@
                                 <a href="' . get_theme_mod("nwc_rot" . $x . "_link") . '">
                                     <img src="' .get_theme_mod('nwc_hero_image' . $x). '" />
                                     <span>
-                                        <h1>' . get_theme_mod("nwc_rot_text" . $x) . '</h1>
+                                        <h1 class="lora">' . get_theme_mod("nwc_rot_text" . $x) . '</h1>
                                         <br>';
                                         if( get_theme_mod("nwc_button" . $x) ){
                                             $owlHtml .= '<button class="btn btn--danger btn--3d font-18">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>' . get_theme_mod("nwc_button" . $x) . '</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>';

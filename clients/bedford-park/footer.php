@@ -46,10 +46,12 @@
                                 'items_wrap'      => '%3$s',
                                 'depth'           => 0,
                             );
-                            echo wp_nav_menu( $args ), '<a>'; 
+                            echo wp_nav_menu( $args ), '<a></a>'; 
 
                             ?>
                         </nav>
+                        <br>
+                        <span>Copyright Info. Website by</span> <a href="http://axiomtechgroup.com" target="_blank" class="font--danger">Axiom Technology Group</a>
                     </div>
                 </div>
             </div>

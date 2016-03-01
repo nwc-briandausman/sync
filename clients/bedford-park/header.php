@@ -42,7 +42,7 @@
                 <div class="container">
                     <div class="col-xs-8 col-xs-offset-2 col-md-3 col-md-offset-0">
                         <a href="<?php bloginfo('url'); ?>">
-                            <img src="<?php echo get_template_directory_uri(); ?>/static/images/logo.jpg" alt="<?php bloginfo('url'); ?>" class="img-responsive padding-vert-sm" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/static/images/logo.jpg" alt="<?php bloginfo('url'); ?>" class="img-responsive padding-vert-xs" />
                         </a>  
                     </div>
                     <div class="col-md-9 text-right">

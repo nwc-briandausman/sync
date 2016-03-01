@@ -66,6 +66,7 @@ $experimental-support-for-khtml : false !default;
 
 //so specifics
 @import "theme-homepage";
+@import "theme-page";
 @import "theme-components";
 @import "theme-modals";
 @import "theme-mainMenu";

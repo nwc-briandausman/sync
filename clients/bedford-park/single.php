@@ -15,7 +15,7 @@
 
 <div class="container padding-xl">
     <div class="row">
-        <div class="<?php if ( is_active_sidebar( 'page_sidebar' ) ) { ?>col-md-8<?php }else{ ?>col-xs-12<?php } ?>">
+        <div class="col-xs-12">
             <div class="padding-xl">
                 <h2 class="font--primary6 lora">
                     Title
@@ -25,11 +25,6 @@
                 </p>
             </div>
         </div>
-        <?php if ( is_active_sidebar( 'page_sidebar' ) ) { ?> 
-        <div class="col-md-4 padding-xl">
-            <?php get_sidebar('page_sidebar'); ?>
-        </div>
-        <?php } ?>
     </div>
 
 </div>

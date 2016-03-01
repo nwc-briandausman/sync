@@ -22,7 +22,7 @@
                 <i class="fa fa-phone font--cta"></i> <?php echo get_theme_mod("nwc_phone"); ?> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <?php } ?>
             <?php if(get_theme_mod("nwc_address")){ ?>
-                <i class="fa fa-map-marker font--cta"></i>  <?php echo get_theme_mod("nwc_address"); ?>
+                <!-- <i class="fa fa-map-marker font--cta"></i>  <?php echo get_theme_mod("nwc_address"); ?> -->
             <?php } ?>
         </div>
     </div>
