@@ -1,0 +1,14 @@
+# SQL Scripts
+
+## Exporting sql file
+    • Open up local phpMyAdmin
+    • http://localhost/MAMP/index.php?page=phpmyadmin&language=English
+    • Choose your DB, example: 'wordpress'
+    • Choose 'Export' > Quick > SQL > Go
+    • Copy to a new file
+    
+## Update table with find/replace
+    UPDATE wp_posts SET post_content = REPLACE (
+    post_content,
+    '/~shos/wp-content/',
+    '/~shos/aae/wp-content/');

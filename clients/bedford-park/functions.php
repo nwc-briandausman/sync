@@ -21,6 +21,6 @@ Get us up and running
 // we're firing all out initial functions at the start
 add_action('after_setup_theme','nwc_ahoy', 15);
 function nwc_ahoy() {
-    
+    flush_rewrite_rules();
 }
 ?>

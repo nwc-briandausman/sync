@@ -1,0 +1,57 @@
+#Home
+#About the village
+    History
+    Village stats
+    Village ordanance
+        Link to ...something
+    Village Staff
+    
+#Bedford Park News
+    Village park news - BLOG
+    In the news - Radio spots
+    
+#Government
+    Meetings
+        Meeting Agenda
+        Board Meeting Minutes
+    Administrative
+        FIOA Requests
+        Open Meeting Act
+    Departments
+        Public works
+        water department
+        building
+    Service
+        link to fire department
+            ""  police department
+            ""  park district
+            ""  Library
+            ""  School District
+            "" Southwest council of mayors
+#Contact Us
+#For Residents
+    General Info
+    Community news
+    Events
+    Forms
+    Senior Services
+#Why Bedford Park
+    Messaging from mind map
+    Testimonials
+#For Business
+    Testimonials
+    Starting a business
+        Quick start
+        Building-related forms
+        zoning maps
+        FAQ
+        link to bpcia.org
+    existing business
+        Business directory
+        building departments
+        village ordanances
+            link to ...something
+        water payment link
+        faq
+        forms
+        

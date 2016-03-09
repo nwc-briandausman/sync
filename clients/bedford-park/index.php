@@ -5,7 +5,7 @@
         <div class="bg--gray3 font--light margin--none">
             <div class="row">
                 <div id="page--header" class="col-xs-12 text-center">
-                    <img src="/wp-content/themes/bedford-park/static/images/page-bg.jpg" />
+                    <img src="<?php bloginfo('template_directory'); ?>/static/images/page-bg.jpg" />
                     <h1 id="page--title" class="lora"><strong>Latest News</strong></h1>
                 </div>
             </div>
